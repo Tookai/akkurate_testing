@@ -37,7 +37,7 @@ const colors = {
 		900: '#625454',
 	},
 	bgDark: '#15202B',
-	bgLight: '#F5F5F5',
+	bgLight: '#FAFAFA',
 	textDark: '#1f1f1f',
 	textLight: '#fafafa',
 	success: {
