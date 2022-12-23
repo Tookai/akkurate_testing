@@ -128,8 +128,8 @@ const styles = {
 
 // Config to include color mode
 const config: ThemeConfig = {
-	initialColorMode: 'dark',
-	useSystemColorMode: true,
+	initialColorMode: 'light',
+	useSystemColorMode: false,
 	disableTransitionOnChange: false,
 }
 
