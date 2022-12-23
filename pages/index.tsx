@@ -292,13 +292,13 @@ const Home: NextPage = () => {
 					setSelectedCardId={setRadioChecked}
 				/>
 				<Button onClick={() => setModalDrawer(!modalDrawer)}>
-					{modalDrawer ? 'Fermer' : 'Ouvrir'}
+					{modalDrawer ? 'Fermer' : 'Ouvrir'} un drawer
 				</Button>
 				<AcsDrawer
 					title={'Drawer'}
 					isOpen={modalDrawer}
 					onClose={() => setModalDrawer(false)}
-					placement={'top'}
+					placement={'right'}
 					hasCloseBtn={true}
 					body={
 						<Text>
@@ -315,7 +315,7 @@ const Home: NextPage = () => {
 					}
 				/>
 				<Button onClick={() => setModal(!modal)}>
-					{modal ? 'Fermer' : 'Ouvrir'}
+					{modal ? 'Fermer' : 'Ouvrir'} une modal
 				</Button>
 
 				<AcsModal
