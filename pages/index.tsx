@@ -28,7 +28,7 @@ import {
 	AcsSelectCreate,
 	AcsSelectMultiple,
 	AcsSlider,
-	AcsTree,
+	AcsTree, AisHome,
 } from '@akkurateio/ds'
 import {
 	Box,
@@ -88,7 +88,7 @@ const Home: NextPage = () => {
 	]
 
 	const options = [
-		{ value: '1', label: 'Option 1' },
+		{ value: '1', label: 'Option 1',isDisabled:true },
 		{ value: '2', label: 'Option 2' },
 		{ value: '3', label: 'Option 3' },
 	]
@@ -129,32 +129,20 @@ const Home: NextPage = () => {
 	const checkboxCard = [
 		{
 			id: 1,
-			body: <Box>C{`'`}est un exemple</Box>,
+			body: <Text fontWeight={"bold"} fontSize={"sm"}>C{`'`}est un exemple </Text>,
 		},
 		{
 			id: 2,
-			body: <Box>Un autre exemple</Box>,
+			body: <><Text fontWeight={"bold"} fontSize={"md"}>Un autre exemple</Text><Text fontSize={"sm"}>Subtitle</Text></>,
 		},
 		{
 			id: 3,
 			body: (
-				<Box width={'200px'} height={'auto'}>
-					<Heading>Coucou</Heading>
-					<Text>
+				<Box  width={'300px'} height={'auto'}>
+					<Heading fontSize={"md"}>Coucou</Heading>
+					<Text marginTop={"5px"} fontSize={"sm"}>
 						il etait une fois dans une galaxie lointaine, très lointaine....
 					</Text>
-					<Text fontSize={'sm'}>Taaan taaan tan tan tan tan taaaaan</Text>
-					<Text textAlign={'right'} fontSize={'xs'}>
-						created by ORCEL
-					</Text>
-				</Box>
-			),
-		},
-		{
-			id: 4,
-			body: (
-				<Box width={'200px'} height={'auto'}>
-					<Heading>Jeune padawan</Heading>
 				</Box>
 			),
 		},
