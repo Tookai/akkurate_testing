@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@akkurateio/components@^0.0.53":
-  version "0.0.53"
-  resolved "https://registry.yarnpkg.com/@akkurateio/components/-/components-0.0.53.tgz#60057ac31179b07d40425620fa3085a084867fc4"
-  integrity sha512-eWqb0IhaclmMbbJuCm9gEbJtvegJvoSkGtNuvrbAYcb3wefhJG89Zh8ax8W7VvWCu/2NViOI046PVjUB4rhIOg==
+"@akkurateio/components@^0.0.56":
+  version "0.0.56"
+  resolved "https://registry.yarnpkg.com/@akkurateio/components/-/components-0.0.56.tgz#218b8ec2e7ae05149ec23d791ebf9208e28919e1"
+  integrity sha512-CgYKGyEZXdnc1bBYDGqTKQ5C6wQMFuITOSjYPKpd6/T8bAhAFfgj9OQWzwl3IgZ1iQfQGk1fae9yZe0w1bdOOw==
   dependencies:
-    "@akkurateio/utils" "^0.0.53"
+    "@akkurateio/utils" "^0.0.56"
     "@chakra-ui/react" ">=2.0.0"
     "@emotion/react" ">=11.0.0"
     "@emotion/styled" ">=11.0.0"
@@ -15,27 +15,27 @@
     react-dropzone "^14.2.2"
     react-file-icon "^1.2.0"
 
-"@akkurateio/ds@^0.0.53":
-  version "0.0.53"
-  resolved "https://registry.yarnpkg.com/@akkurateio/ds/-/ds-0.0.53.tgz#7060e79a1e1279b47b76796a6dba4044e4ceb81f"
-  integrity sha512-6HaajrHoNnJ4QuCCHPBTew7UUhFT+hpghJpUvjl9ZBpeRbJcKy8gLRkrnR2Of+9CKP61t0wT52RwtnQISMN3XQ==
+"@akkurateio/ds@^0.0.56":
+  version "0.0.56"
+  resolved "https://registry.yarnpkg.com/@akkurateio/ds/-/ds-0.0.56.tgz#10f5f82ecd463d69a65bd9a77abfd4b0fa9635e8"
+  integrity sha512-46DOrRNwtZatO6kE3tLH3v9YRdWCBuBaRQtk+NQWkFuVNnk0jpOESiKFgXABbG9i9znHb+fE1r3VK76C5kTdhA==
   dependencies:
-    "@akkurateio/components" "^0.0.53"
-    "@akkurateio/forms" "^0.0.53"
-    "@akkurateio/icons" "^0.0.53"
-    "@akkurateio/utils" "^0.0.53"
+    "@akkurateio/components" "^0.0.56"
+    "@akkurateio/forms" "^0.0.56"
+    "@akkurateio/icons" "^0.0.56"
+    "@akkurateio/utils" "^0.0.56"
     "@chakra-ui/react" ">=2.0.0"
     "@emotion/react" ">=11.0.0"
     "@emotion/styled" ">=11.0.0"
     framer-motion ">=7.0.0"
 
-"@akkurateio/forms@^0.0.53":
-  version "0.0.53"
-  resolved "https://registry.yarnpkg.com/@akkurateio/forms/-/forms-0.0.53.tgz#595c6d94d3378e221e499c17f1c129acacecfc62"
-  integrity sha512-BZB599XY+0y6B2aFUYtdm7Y5WibbK8sEd8AW6S+slZ3Qp3s4fuh0JQQ0wFkBPkEq3/RKNYDvEqjuUydlyZXqQw==
+"@akkurateio/forms@^0.0.56":
+  version "0.0.56"
+  resolved "https://registry.yarnpkg.com/@akkurateio/forms/-/forms-0.0.56.tgz#fea85a2a3d828ea562ff8d936fc7370826f14693"
+  integrity sha512-xc5OrAnk9L8hvVvaOanB3RVYAB39ktV0vo1LT1v7fTKnBsY/pnfOoWzQ2lwPlKR1D370sHIBzvcmDyA9IWqcAg==
   dependencies:
-    "@akkurateio/icons" "^0.0.53"
-    "@akkurateio/utils" "^0.0.53"
+    "@akkurateio/icons" "^0.0.56"
+    "@akkurateio/utils" "^0.0.56"
     "@chakra-ui/react" ">=2.0.0"
     "@emotion/react" ">=11.0.0"
     "@emotion/styled" ">=11.0.0"
@@ -52,20 +52,20 @@
     react-world-flags "^1.5.1"
     styled-components "5.3.5"
 
-"@akkurateio/icons@^0.0.53":
-  version "0.0.53"
-  resolved "https://registry.yarnpkg.com/@akkurateio/icons/-/icons-0.0.53.tgz#7a0123be1d05c7e9e7cb2d1784ba4d2caaa5005c"
-  integrity sha512-tcWad5eRjnDw4ShC+tjjfg2AzBkvzK7uD1dsncHpJLThRDb6V262WAxrsw7Gliuq6whETejXcdP0OMu/RoxPkA==
+"@akkurateio/icons@^0.0.56":
+  version "0.0.56"
+  resolved "https://registry.yarnpkg.com/@akkurateio/icons/-/icons-0.0.56.tgz#7213e467e8c0425b003ec71f913e820e30a4979d"
+  integrity sha512-YMLsFWHMl2xcmbRXwa+I5b2bgjkHg4taUpb4IVn6vTMux7Jik3pIjV23jU8Sbb5matP16zxnZ+xQGDFxmMjd9w==
   dependencies:
     "@chakra-ui/react" ">=2.0.0"
     "@emotion/react" ">=11.0.0"
     "@emotion/styled" ">=11.0.0"
     framer-motion ">=7.0.0"
 
-"@akkurateio/utils@^0.0.53":
-  version "0.0.53"
-  resolved "https://registry.yarnpkg.com/@akkurateio/utils/-/utils-0.0.53.tgz#a9feb3d8afa3ba8a68f6998b83e7700295c6214d"
-  integrity sha512-90ErdP18s0werRSm1pRYoYsf08uL2fGjtm64kE56YFoAJTZ3c8KQe8wrnOaF+3TQADFQNS77x2kJi/icDm6WqA==
+"@akkurateio/utils@^0.0.56":
+  version "0.0.56"
+  resolved "https://registry.yarnpkg.com/@akkurateio/utils/-/utils-0.0.56.tgz#1d24cc63b8fd56da3adf35bdcc7d67fa905f518c"
+  integrity sha512-1UMUBKeUb/1ZP7UahoW3GmjUcm1exSwG18d3lil2tIUgOuabECPSUl3Jk3ib5NZdAUbiJiRkMdo+ytqpeDNgSg==
   dependencies:
     "@chakra-ui/react" ">=2.0.0"
     "@emotion/react" ">=11.0.0"

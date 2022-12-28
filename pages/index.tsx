@@ -163,11 +163,11 @@ const Home: NextPage = () => {
 					value={inputText}
 					handleChange={setInputText}
 				/>
-				<AcsInputPhone
-					label={'Input phone'}
-					handleChange={setInputPhone}
-					value={inputPhone}
-				/>
+				{/*<AcsInputPhone*/}
+				{/*	label={'Input phone'}*/}
+				{/*	handleChange={setInputPhone}*/}
+				{/*	value={inputPhone}*/}
+				{/*/>*/}
 				<AcsInputDate
 					label={'Input date'}
 					value={inputDate}
