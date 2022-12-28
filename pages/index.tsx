@@ -129,16 +129,16 @@ const Home: NextPage = () => {
 	const checkboxCard = [
 		{
 			id: 1,
-			body: <Text fontWeight={"bold"} fontSize={"sm"}>C{`'`}est un exemple </Text>,
+			body: <Text width={"fit-content"} height={'auto'} fontWeight={"bold"} fontSize={"sm"}>C{`'`}est un exemple </Text>,
 		},
 		{
 			id: 2,
-			body: <><Text fontWeight={"bold"} fontSize={"md"}>Un autre exemple</Text><Text fontSize={"sm"}>Subtitle</Text></>,
+			body: <><Text width={"fit-content"} height={'auto'} fontWeight={"bold"} fontSize={"md"}>Un autre exemple</Text><Text fontSize={"sm"}>Subtitle</Text></>,
 		},
 		{
 			id: 3,
 			body: (
-				<Box  width={'300px'} height={'auto'}>
+				<Box  height={'auto'}>
 					<Heading fontSize={"md"}>Coucou</Heading>
 					<Text marginTop={"5px"} fontSize={"sm"}>
 						il etait une fois dans une galaxie lointaine, très lointaine....
@@ -273,11 +273,13 @@ const Home: NextPage = () => {
 					contentArray={checkboxCard}
 					selectedCardIds={checked}
 					setSelectedCardIds={setChecked}
+					spacing={4}
 				/>
 				<AcsRadioSelectCard
 					contentArray={checkboxCard}
 					selectedCardId={radioChecked}
 					setSelectedCardId={setRadioChecked}
+					spacing={4}
 				/>
 				<Button onClick={() => setModalDrawer(!modalDrawer)}>
 					{modalDrawer ? 'Fermer' : 'Ouvrir'} un drawer
@@ -339,6 +341,7 @@ const Home: NextPage = () => {
 					handleChange={(radio) => setRadio(radio as string | number)}
 					valuesArray={radioArray}
 					value={radio}
+					size={'sm'}
 				/>
 				<AcsCheckboxMultiple
 					multiple
