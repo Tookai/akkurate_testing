@@ -137,7 +137,7 @@ const Home: NextPage = () => {
 					fontWeight={'bold'}
 					fontSize={'sm'}
 				>
-					C'est un exemple
+					C est un exemple
 				</Text>
 			),
 		},
