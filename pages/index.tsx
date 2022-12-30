@@ -28,7 +28,8 @@ import {
 	AcsSelectCreate,
 	AcsSelectMultiple,
 	AcsSlider,
-	AcsTree, AisHome,
+	AcsTree,
+	AisHome,
 } from '@akkurateio/ds'
 import {
 	Box,
@@ -88,7 +89,7 @@ const Home: NextPage = () => {
 	]
 
 	const options = [
-		{ value: '1', label: 'Option 1',isDisabled:true },
+		{ value: '1', label: 'Option 1', isDisabled: true },
 		{ value: '2', label: 'Option 2' },
 		{ value: '3', label: 'Option 3' },
 	]
@@ -129,18 +130,39 @@ const Home: NextPage = () => {
 	const checkboxCard = [
 		{
 			id: 1,
-			body: <Text width={"fit-content"} height={'auto'} fontWeight={"bold"} fontSize={"sm"}>C{`'`}est un exemple </Text>,
+			body: (
+				<Text
+					width={'fit-content'}
+					height={'auto'}
+					fontWeight={'bold'}
+					fontSize={'sm'}
+				>
+					C{`'`}est un exemple{' '}
+				</Text>
+			),
 		},
 		{
 			id: 2,
-			body: <><Text width={"fit-content"} height={'auto'} fontWeight={"bold"} fontSize={"md"}>Un autre exemple</Text><Text fontSize={"sm"}>Subtitle</Text></>,
+			body: (
+				<>
+					<Text
+						width={'fit-content'}
+						height={'auto'}
+						fontWeight={'bold'}
+						fontSize={'md'}
+					>
+						Un autre exemple
+					</Text>
+					<Text fontSize={'sm'}>Subtitle</Text>
+				</>
+			),
 		},
 		{
 			id: 3,
 			body: (
-				<Box  height={'auto'}>
-					<Heading fontSize={"md"}>Coucou</Heading>
-					<Text marginTop={"5px"} fontSize={"sm"}>
+				<Box height={'auto'}>
+					<Heading fontSize={'md'}>Coucou</Heading>
+					<Text marginTop={'5px'} fontSize={'sm'}>
 						il etait une fois dans une galaxie lointaine, très lointaine....
 					</Text>
 				</Box>
@@ -256,6 +278,22 @@ const Home: NextPage = () => {
 					handleChangePage={setPaginate}
 					withPageInfos
 				/>
+				<HStack width={'full'} justifyContent={'space-between'}>
+					<Box>
+						<AcsPaginate
+							max={100}
+							current={paginate}
+							handleChangePage={setPaginate}
+						/>
+					</Box>
+					<Box>
+						<AcsPaginateSecondary
+							max={100}
+							current={paginate}
+							handleChangePage={setPaginate}
+						/>
+					</Box>
+				</HStack>
 				<AcsSlider
 					allStep
 					onChange={setSlider}
@@ -299,8 +337,20 @@ const Home: NextPage = () => {
 					}
 					footer={
 						<Flex justifyContent={'space-between'} width={'full'}>
-							<Button onClick={() => setModalDrawer(false)}>Close</Button>
-							<Button onClick={() => console.log('hello')}>Exemple</Button>
+							<Button
+								backgroundColor={'neutral.400'}
+								color={'white'}
+								onClick={() => setModal(false)}
+							>
+								Close
+							</Button>
+							<Button
+								backgroundColor={'primary.500'}
+								color={'white'}
+								onClick={() => console.log('jojo')}
+							>
+								Vue
+							</Button>
 						</Flex>
 					}
 				/>
@@ -325,8 +375,20 @@ const Home: NextPage = () => {
 					}
 					footer={
 						<Flex justifyContent={'space-between'} width={'full'}>
-							<Button onClick={() => setModal(false)}>Close</Button>
-							<Button onClick={() => console.log('coucou')}>Vue</Button>
+							<Button
+								backgroundColor={'neutral.500'}
+								color={'white'}
+								onClick={() => setModal(false)}
+							>
+								Close
+							</Button>
+							<Button
+								backgroundColor={'primary.500'}
+								color={'white'}
+								onClick={() => console.log('jojo')}
+							>
+								Vue
+							</Button>
 						</Flex>
 					}
 					size={'lg'}
@@ -341,10 +403,20 @@ const Home: NextPage = () => {
 					handleChange={(radio) => setRadio(radio as string | number)}
 					valuesArray={radioArray}
 					value={radio}
-					size={'sm'}
+				/>
+				<AcsRadioGroup
+					handleChange={(radio) => setRadio(radio as string | number)}
+					valuesArray={radioArray}
+					value={radio}
+					columns={4}
 				/>
 				<AcsCheckboxMultiple
-					multiple
+					contentArray={contentArray}
+					setSelectedCheckboxIds={setSelectedCheckboxIds}
+					selectedCheckboxIds={selectedCheckboxIds}
+				/>
+				<AcsCheckboxMultiple
+					columns={3}
 					contentArray={contentArray}
 					setSelectedCheckboxIds={setSelectedCheckboxIds}
 					selectedCheckboxIds={selectedCheckboxIds}
