@@ -137,7 +137,7 @@ const Home: NextPage = () => {
 					fontWeight={'bold'}
 					fontSize={'sm'}
 				>
-					C{`'`}est un exemple{' '}
+					C'est un exemple
 				</Text>
 			),
 		},
@@ -153,7 +153,9 @@ const Home: NextPage = () => {
 					>
 						Un autre exemple
 					</Text>
-					<Text fontSize={'sm'}>Subtitle</Text>
+					<Text color={'neutral.400'} fontSize={'xs'}>
+						Subtitle
+					</Text>
 				</>
 			),
 		},
@@ -184,6 +186,7 @@ const Home: NextPage = () => {
 					label={'Input text'}
 					value={inputText}
 					handleChange={setInputText}
+					rounded={'full'}
 				/>
 				{/*<AcsInputPhone*/}
 				{/*	label={'Input phone'}*/}
@@ -194,36 +197,43 @@ const Home: NextPage = () => {
 					label={'Input date'}
 					value={inputDate}
 					handleChange={setInputDate}
+					rounded={'full'}
 				/>
 				<AcsInputTime
 					label={'Input Time'}
 					handleChange={setInputTime}
 					value={inputTime}
+					rounded={'full'}
 				/>
 				<AcsInputColor
 					label={'Input color'}
 					handleChange={setInputColor}
 					value={inputColor}
+					rounded={'full'}
 				/>
 				<AcsInputTextArea
 					handleChange={setInputTextArea}
 					value={inputTextArea}
 					label={'Input text area'}
+					rounded={'full'}
 				/>
 				<AcsInputEmail
 					handleChange={setInputEmail}
 					value={inputEmail}
 					label={'Input email'}
+					rounded={'full'}
 				/>
 				<AcsInputSearch
 					handleChange={setInputSearch}
 					value={inputSearch}
 					label={'Input search'}
+					rounded={'full'}
 				/>
 				<AcsInputNumber
 					handleChange={setInputNumber}
 					value={inputNumber}
 					label={'Input number'}
+					rounded={'full'}
 				/>
 				<AcsInputPassword
 					handleChange={setInputPassword}
