@@ -426,13 +426,6 @@ const Home: NextPage = () => {
 					selectedCheckboxIds={selectedCheckboxIds}
 				/>
 				<AcsDropzone maxFiles={7} handleChange={setFiles} />
-				<AcsPdfViewer
-					viewerOnly={false}
-					withFitH={true}
-					src={
-						'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
-					}
-				/>
 				<AcsCarousel
 					cardsArray={[
 						<Flex
@@ -471,6 +464,15 @@ const Home: NextPage = () => {
 					]}
 				/>
 			</SimpleGrid>
+			<Box height={'1000px'}>
+				<AcsPdfViewer
+					viewerOnly={false}
+					withFitH={true}
+					src={
+						'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+					}
+				/>
+			</Box>
 		</Box>
 	)
 }
