@@ -11,7 +11,6 @@ import {
 	AcsInputFile,
 	AcsInputNumber,
 	AcsInputPassword,
-	AcsInputPhone,
 	AcsInputPin,
 	AcsInputSearch,
 	AcsInputText,
@@ -30,8 +29,8 @@ import {
 	AcsSelectMultiple,
 	AcsSlider,
 	AcsTree,
-	AisHome,
 } from '@akkurateio/ds'
+import { AcsWysiwyg } from '@akkurateio/wysiwyg'
 import {
 	Box,
 	Button,
@@ -181,6 +180,8 @@ const Home: NextPage = () => {
 				<ToggleColorMode />
 			</HStack>
 			<Text>Test des composants</Text>
+
+			<AcsWysiwyg value={inputText} setValue={setInputText} />
 
 			<SimpleGrid columns={2} spacing={10}>
 				<AcsInputText

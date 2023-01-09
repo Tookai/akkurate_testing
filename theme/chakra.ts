@@ -1,6 +1,84 @@
 import { extendTheme, ThemeConfig } from '@chakra-ui/react'
 import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools' // Custom colors
 
+const markdownCss = {
+	h2: {
+		lineHeight: '1.5',
+		fontSize: '1.875rem',
+		fontWeight: 'bold',
+	},
+	h3: {
+		lineHeight: '1.5',
+		fontSize: '1.5rem',
+		fontWeight: 'bold',
+	},
+	h4: {
+		lineHeight: '1,5',
+		fontSize: '1.25rem',
+		fontWeight: 'bold',
+	},
+	h5: {
+		lineHeight: '1,5',
+		fontSize: '1.125rem',
+		fontWeight: 'bold',
+	},
+	h6: {
+		lineHeight: '1,5',
+		fontSize: '1rem',
+		fontWeight: 'bold',
+	},
+	p: {
+		fontSize: '0.875rem',
+		whiteSpace: 'pre-wrap',
+		marginBottom: '0.65rem',
+	},
+	'p:empty:before': {
+		content: '" "',
+		whiteSpace: 'pre',
+	},
+	pre: {
+		padding: '0.5rem',
+		borderRadius: '4px',
+		backgroundColor: 'gray.100',
+		margin: '1rem 0',
+	},
+	'pre > code': {
+		borderRadius: '0.5rem',
+		padding: '0.5rem',
+		fontSize: '0.75rem',
+	},
+	blockquote: {
+		fontSize: '1.125rem',
+		backgroundColor: 'blue.50',
+		padding: '0.5rem',
+		borderRadius: '4px',
+		fontStyle: 'italic',
+		fontFamily: 'Times',
+		marginBottom: '1rem',
+		margin: '1rem 0',
+	},
+	'.task-list-item': {
+		display: 'flex',
+		gap: '0.5rem',
+	},
+	ul: {
+		fontSize: '0.875rem',
+		marginLeft: '2rem',
+		marginBottom: '1rem',
+	},
+	ol: {
+		marginLeft: '2rem',
+		marginBottom: '1rem',
+	},
+	'li > p': {
+		marginBottom: 0,
+	},
+	a: {
+		color: 'blue.600',
+		textDecoration: 'underline',
+	},
+}
+
 // Custom colors
 const colors = {
 	primary: {
@@ -96,6 +174,18 @@ const colors = {
 		800: '#262626',
 		900: '#171717',
 	},
+	gray: {
+		50: '#fafafa',
+		100: '#f5f5f5',
+		200: '#e5e5e5',
+		300: '#d4d4d4',
+		400: '#a3a3a3',
+		500: '#737373',
+		600: '#525252',
+		700: '#404040',
+		800: '#262626',
+		900: '#171717',
+	},
 }
 
 // Custom global styles
@@ -133,6 +223,21 @@ const styles = {
 			':hover': {
 				textDecoration: 'underline',
 			},
+		},
+		'.markdown': {
+			...markdownCss,
+		},
+		'.ProseMirror': {
+			width: '100%',
+			height: '100%',
+			minHeight: '100px',
+			overflowY: 'auto',
+			padding: 2,
+			bg: 'inherit',
+			...markdownCss,
+		},
+		'.ProseMirror-focused': {
+			outlineColor: 'primary.500',
 		},
 	}),
 }
