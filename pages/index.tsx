@@ -20,6 +20,7 @@ import {
 	AcsModal,
 	AcsPaginate,
 	AcsPaginateSecondary,
+	AcsPdfViewer,
 	AcsPopover,
 	AcsRadioGroup,
 	AcsRadioSelectCard,
@@ -186,7 +187,6 @@ const Home: NextPage = () => {
 					label={'Input text'}
 					value={inputText}
 					handleChange={setInputText}
-					rounded={'full'}
 				/>
 				{/*<AcsInputPhone*/}
 				{/*	label={'Input phone'}*/}
@@ -197,43 +197,36 @@ const Home: NextPage = () => {
 					label={'Input date'}
 					value={inputDate}
 					handleChange={setInputDate}
-					rounded={'full'}
 				/>
 				<AcsInputTime
 					label={'Input Time'}
 					handleChange={setInputTime}
 					value={inputTime}
-					rounded={'full'}
 				/>
 				<AcsInputColor
 					label={'Input color'}
 					handleChange={setInputColor}
 					value={inputColor}
-					rounded={'full'}
 				/>
 				<AcsInputTextArea
 					handleChange={setInputTextArea}
 					value={inputTextArea}
 					label={'Input text area'}
-					rounded={'full'}
 				/>
 				<AcsInputEmail
 					handleChange={setInputEmail}
 					value={inputEmail}
 					label={'Input email'}
-					rounded={'full'}
 				/>
 				<AcsInputSearch
 					handleChange={setInputSearch}
 					value={inputSearch}
 					label={'Input search'}
-					rounded={'full'}
 				/>
 				<AcsInputNumber
 					handleChange={setInputNumber}
 					value={inputNumber}
 					label={'Input number'}
-					rounded={'full'}
 				/>
 				<AcsInputPassword
 					handleChange={setInputPassword}
@@ -432,6 +425,13 @@ const Home: NextPage = () => {
 					selectedCheckboxIds={selectedCheckboxIds}
 				/>
 				<AcsDropzone maxFiles={7} handleChange={setFiles} />
+				<AcsPdfViewer
+					viewerOnly={false}
+					withFitH={true}
+					src={
+						'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+					}
+				/>
 				<AcsCarousel
 					cardsArray={[
 						<Flex

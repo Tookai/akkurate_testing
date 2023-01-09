@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@akkurateio/components@^0.0.56":
-  version "0.0.56"
-  resolved "https://registry.yarnpkg.com/@akkurateio/components/-/components-0.0.56.tgz#218b8ec2e7ae05149ec23d791ebf9208e28919e1"
-  integrity sha512-CgYKGyEZXdnc1bBYDGqTKQ5C6wQMFuITOSjYPKpd6/T8bAhAFfgj9OQWzwl3IgZ1iQfQGk1fae9yZe0w1bdOOw==
+"@akkurateio/components@^0.0.58":
+  version "0.0.58"
+  resolved "https://registry.yarnpkg.com/@akkurateio/components/-/components-0.0.58.tgz#45f5479ae9620155d57a32b068d95bf30f5261a3"
+  integrity sha512-ltAW7LztDReTyIFchMP+Id/TatQwxQp+tq3VcS5QXBs1vCo5PsWFObp0Pxxxdk3d/C7YhsW3fnUEXEP6speNAA==
   dependencies:
-    "@akkurateio/utils" "^0.0.56"
+    "@akkurateio/utils" "^0.0.58"
     "@chakra-ui/react" ">=2.0.0"
     "@emotion/react" ">=11.0.0"
     "@emotion/styled" ">=11.0.0"
@@ -15,32 +15,31 @@
     react-dropzone "^14.2.2"
     react-file-icon "^1.2.0"
 
-"@akkurateio/ds@^0.0.56":
-  version "0.0.56"
-  resolved "https://registry.yarnpkg.com/@akkurateio/ds/-/ds-0.0.56.tgz#10f5f82ecd463d69a65bd9a77abfd4b0fa9635e8"
-  integrity sha512-46DOrRNwtZatO6kE3tLH3v9YRdWCBuBaRQtk+NQWkFuVNnk0jpOESiKFgXABbG9i9znHb+fE1r3VK76C5kTdhA==
+"@akkurateio/ds@^0.0.58":
+  version "0.0.58"
+  resolved "https://registry.yarnpkg.com/@akkurateio/ds/-/ds-0.0.58.tgz#da0fe24a7a0bc826c8a3a94d9d7876828c5aae01"
+  integrity sha512-yRH5W7kj0p+wvCNVxG6fu2lee1bQ5XvhOx6LKKKVObwKYAkTg7ZLoLyB4Bb+Rj3YzDP0SXslIrshf64XqXNeXg==
   dependencies:
-    "@akkurateio/components" "^0.0.56"
-    "@akkurateio/forms" "^0.0.56"
-    "@akkurateio/icons" "^0.0.56"
-    "@akkurateio/utils" "^0.0.56"
+    "@akkurateio/components" "^0.0.58"
+    "@akkurateio/forms" "^0.0.58"
+    "@akkurateio/icons" "^0.0.58"
+    "@akkurateio/utils" "^0.0.58"
     "@chakra-ui/react" ">=2.0.0"
     "@emotion/react" ">=11.0.0"
     "@emotion/styled" ">=11.0.0"
     framer-motion ">=7.0.0"
 
-"@akkurateio/forms@^0.0.56":
-  version "0.0.56"
-  resolved "https://registry.yarnpkg.com/@akkurateio/forms/-/forms-0.0.56.tgz#fea85a2a3d828ea562ff8d936fc7370826f14693"
-  integrity sha512-xc5OrAnk9L8hvVvaOanB3RVYAB39ktV0vo1LT1v7fTKnBsY/pnfOoWzQ2lwPlKR1D370sHIBzvcmDyA9IWqcAg==
+"@akkurateio/forms@^0.0.58":
+  version "0.0.58"
+  resolved "https://registry.yarnpkg.com/@akkurateio/forms/-/forms-0.0.58.tgz#e0a4063b8ce5eb81bc8a2ed15a22c582e3f9f940"
+  integrity sha512-KQBEF0zowF2nw/seRlblmq1AQELOKgQBlPQh/atbeFjU+E+udvI/efFHul8Y9jEWIUW0Zlj1RIHgl+tDHh9VsA==
   dependencies:
-    "@akkurateio/icons" "^0.0.56"
-    "@akkurateio/utils" "^0.0.56"
+    "@akkurateio/icons" "^0.0.58"
+    "@akkurateio/utils" "^0.0.58"
     "@chakra-ui/react" ">=2.0.0"
     "@emotion/react" ">=11.0.0"
     "@emotion/styled" ">=11.0.0"
     chakra-react-select "^4.4.2"
-    countries-list "^2.6.1"
     dayjs "1.11.5"
     framer-motion ">=7.0.0"
     iso-countries-languages "^0.3.0"
@@ -52,20 +51,20 @@
     react-world-flags "^1.5.1"
     styled-components "5.3.5"
 
-"@akkurateio/icons@^0.0.56":
-  version "0.0.56"
-  resolved "https://registry.yarnpkg.com/@akkurateio/icons/-/icons-0.0.56.tgz#7213e467e8c0425b003ec71f913e820e30a4979d"
-  integrity sha512-YMLsFWHMl2xcmbRXwa+I5b2bgjkHg4taUpb4IVn6vTMux7Jik3pIjV23jU8Sbb5matP16zxnZ+xQGDFxmMjd9w==
+"@akkurateio/icons@^0.0.58":
+  version "0.0.58"
+  resolved "https://registry.yarnpkg.com/@akkurateio/icons/-/icons-0.0.58.tgz#bd034ec8876e2078ac315642cf756303c3ce0f9a"
+  integrity sha512-g9qxdE8g1kFNTvhawZ7OhvCx4AqNEMdjptUxxS9wUgA8SwHocKGhMFzLBcDAYTY0oxFisYkhUvn2qh2xGq1lLQ==
   dependencies:
     "@chakra-ui/react" ">=2.0.0"
     "@emotion/react" ">=11.0.0"
     "@emotion/styled" ">=11.0.0"
     framer-motion ">=7.0.0"
 
-"@akkurateio/utils@^0.0.56":
-  version "0.0.56"
-  resolved "https://registry.yarnpkg.com/@akkurateio/utils/-/utils-0.0.56.tgz#1d24cc63b8fd56da3adf35bdcc7d67fa905f518c"
-  integrity sha512-1UMUBKeUb/1ZP7UahoW3GmjUcm1exSwG18d3lil2tIUgOuabECPSUl3Jk3ib5NZdAUbiJiRkMdo+ytqpeDNgSg==
+"@akkurateio/utils@^0.0.58":
+  version "0.0.58"
+  resolved "https://registry.yarnpkg.com/@akkurateio/utils/-/utils-0.0.58.tgz#631b2a94b8ccdca0991b6fde0a911996260890cc"
+  integrity sha512-S0PNnykgaIyez18RLyYSlpbxH0MBEZXkIJ47nSa7nD2YNu4L6pkZyN6m4hiE0Ty8sWUTsPyg0Ex3jbnIAeZFmg==
   dependencies:
     "@chakra-ui/react" ">=2.0.0"
     "@emotion/react" ">=11.0.0"
@@ -2434,11 +2433,6 @@ cosmiconfig@^7.0.0:
     parse-json "^5.0.0"
     path-type "^4.0.0"
     yaml "^1.10.0"
-
-countries-list@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/countries-list/-/countries-list-2.6.1.tgz#d479757ac873b1e596ccea0a925962d20396c0cb"
-  integrity sha512-jXM1Nv3U56dPQ1DsUSsEaGmLHburo4fnB7m+1yhWDUVvx5gXCd1ok/y3gXCjXzhqyawG+igcPYcAl4qjkvopaQ==
 
 cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
