@@ -10,8 +10,8 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
-		"@akkurateio/ds": "^0.0.63",
-		"@akkurateio/wysiwyg": "^0.0.63",
+		"@akkurateio/ds": "^0.0.68",
+		"@akkurateio/wysiwyg": "^0.0.68",
 		"@chakra-ui/react": "^2.4.1",
 		"@emotion/react": "^11.10.5",
 		"@emotion/styled": "^11.10.5",

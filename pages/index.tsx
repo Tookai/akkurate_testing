@@ -11,6 +11,7 @@ import {
 	AcsInputFile,
 	AcsInputNumber,
 	AcsInputPassword,
+	AcsInputPhone,
 	AcsInputPin,
 	AcsInputSearch,
 	AcsInputText,
@@ -149,7 +150,7 @@ const Home: NextPage = () => {
 						width={'fit-content'}
 						height={'auto'}
 						fontWeight={'bold'}
-						fontSize={'md'}
+						fontSize={'sm'}
 					>
 						Un autre exemple
 					</Text>
@@ -189,11 +190,11 @@ const Home: NextPage = () => {
 					value={inputText}
 					handleChange={setInputText}
 				/>
-				{/*<AcsInputPhone*/}
-				{/*	label={'Input phone'}*/}
-				{/*	handleChange={setInputPhone}*/}
-				{/*	value={inputPhone}*/}
-				{/*/>*/}
+				<AcsInputPhone
+					label={'Input phone'}
+					handleChange={setInputPhone}
+					value={inputPhone}
+				/>
 				<AcsInputDate
 					label={'Input date'}
 					value={inputDate}
@@ -267,14 +268,14 @@ const Home: NextPage = () => {
 					options={options}
 					handleChange={setSelectedMultiple}
 					value={selectedMultiple}
-					label={'Select create'}
+					title={'Select create'}
 				/>
 				<AcsRangeSlider
 					allStep
 					indicatorSteps={10}
 					onChange={setRangeSlider}
 					value={rangeSlider}
-					label={'Range slider'}
+					title={'Range slider'}
 				/>
 				<AcsPaginate
 					max={100}
@@ -425,7 +426,7 @@ const Home: NextPage = () => {
 					setSelectedCheckboxIds={setSelectedCheckboxIds}
 					selectedCheckboxIds={selectedCheckboxIds}
 				/>
-				<AcsDropzone maxFiles={7} handleChange={setFiles} />
+				<AcsDropzone maxFiles={1} handleChange={setFiles} />
 				<AcsCarousel
 					cardsArray={[
 						<Flex
