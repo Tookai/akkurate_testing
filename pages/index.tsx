@@ -30,6 +30,7 @@ import {
 	AcsSelectMultiple,
 	AcsSlider,
 	AcsTree,
+	AcsInputDateRange,
 } from '@akkurateio/ds'
 import { AcsWysiwyg } from '@akkurateio/wysiwyg'
 import {
@@ -44,6 +45,7 @@ import {
 import type { NextPage } from 'next'
 import { useState } from 'react'
 import ToggleColorMode from '../components/atoms/ToggleColorMode'
+import dayjs from 'dayjs'
 
 const Home: NextPage = () => {
 	const [inputText, setInputText] = useState<string>('')
@@ -80,6 +82,11 @@ const Home: NextPage = () => {
 		(string | number)[]
 	>([])
 	const [files, setFiles] = useState<FileList | File[] | null>(null)
+	const [dateRange, setDateRange] = useState({
+		afterDate: null,
+		beforeDate: null,
+		currentDate: dayjs(),
+	})
 
 	const autoComplete = [
 		'belle essaie',
@@ -323,6 +330,13 @@ const Home: NextPage = () => {
 					selectedCardId={radioChecked}
 					setSelectedCardId={setRadioChecked}
 					spacing={4}
+				/>
+				<AcsInputDateRange
+					value={dateRange}
+					handleChange={setDateRange}
+					options={{
+						disabledDays: [0, 6],
+					}}
 				/>
 				<Button onClick={() => setModalDrawer(!modalDrawer)}>
 					{modalDrawer ? 'Fermer' : 'Ouvrir'} un drawer
