@@ -45,7 +45,7 @@ import {
 import type { NextPage } from 'next'
 import { useState } from 'react'
 import ToggleColorMode from '../components/atoms/ToggleColorMode'
-import dayjs from 'dayjs'
+import dayjs, { Dayjs } from 'dayjs'
 
 const Home: NextPage = () => {
 	const [inputText, setInputText] = useState<string>('')
@@ -82,7 +82,11 @@ const Home: NextPage = () => {
 		(string | number)[]
 	>([])
 	const [files, setFiles] = useState<FileList | File[] | null>(null)
-	const [dateRange, setDateRange] = useState({
+	const [dateRange, setDateRange] = useState<{
+		afterDate: Dayjs | null
+		beforeDate: Dayjs | null
+		currentDate: Dayjs
+	}>({
 		afterDate: null,
 		beforeDate: null,
 		currentDate: dayjs(),
@@ -434,6 +438,7 @@ const Home: NextPage = () => {
 					setSelectedCheckboxIds={setSelectedCheckboxIds}
 					selectedCheckboxIds={selectedCheckboxIds}
 				/>
+
 				<AcsCheckboxMultiple
 					columns={3}
 					contentArray={contentArray}
@@ -479,7 +484,7 @@ const Home: NextPage = () => {
 					]}
 				/>
 			</SimpleGrid>
-			<Box height={'1000px'}>
+			<Box height={'1000px'} marginTop={5}>
 				<AcsPdfViewer
 					viewerOnly={false}
 					withFitH={true}
