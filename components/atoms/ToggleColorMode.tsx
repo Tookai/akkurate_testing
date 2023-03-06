@@ -5,7 +5,7 @@ const ToggleColorMode: FunctionComponent = () => {
 	const { colorMode, toggleColorMode } = useColorMode()
 
 	return (
-		<Flex alignItems={'center'} mx={5} experimental_spaceX={2}>
+		<Flex alignItems={'center'} mx={5}>
 			<Switch isChecked={colorMode === 'light'} onChange={toggleColorMode} />
 		</Flex>
 	)
