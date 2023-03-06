@@ -27,9 +27,6 @@ const Datagrid = () => {
 			Header: 'Téléphone',
 			accessor: 'phone',
 			withSort: false,
-			Cell: (props: any) => {
-				return <Box onClick={() => console.log(props.row)}>{props.value}</Box>
-			},
 		},
 	]
 
@@ -57,6 +54,48 @@ const Datagrid = () => {
 				name: 'Doe',
 				firstname: 'Jill',
 				email: 'jillDoe' + '@gmail.com',
+				phone: '0123456789',
+			},
+			{
+				name: 'Doe',
+				firstname: 'Jolie',
+				email: 'jolieDoe' + '@gmail.com',
+				phone: '0123456789',
+			},
+			{
+				name: 'Doe',
+				firstname: 'Joaquin',
+				email: 'joaquinDoe' + '@gmail.com',
+				phone: '0123456789',
+			},
+			{
+				name: 'Doe',
+				firstname: 'Jules',
+				email: 'julesDoe' + '@gmail.com',
+				phone: '0123456789',
+			},
+			{
+				name: 'Doe',
+				firstname: 'Juliette',
+				email: 'julietteDoe' + '@gmail.com',
+				phone: '0123456789',
+			},
+			{
+				name: 'Doe',
+				firstname: 'Julien',
+				email: 'julienDoe' + '@gmail.com',
+				phone: '0123456789',
+			},
+			{
+				name: 'Doe',
+				firstname: 'Juliette',
+				email: 'julietteDoe' + '@gmail.com',
+				phone: '0123456789',
+			},
+			{
+				name: 'Doe',
+				firstname: 'Julien',
+				email: 'julienDoe' + '@gmail.com',
 				phone: '0123456789',
 			},
 		],
