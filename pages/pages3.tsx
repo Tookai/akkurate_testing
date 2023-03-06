@@ -74,7 +74,7 @@ const Datagrid2 = () => {
 		},
 	}
 	return (
-		<Box h={'100vh'} p={4}>
+		<Box h={'95vh'} p={4}>
 			<AcsDatagrid
 				columns={headers}
 				data={lines.data}
